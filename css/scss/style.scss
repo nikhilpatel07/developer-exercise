@@ -1,0 +1,30 @@
+@import "mixins";
+@import "external-fonts";
+@import "tick-tock-pattern";
+@import "section-heading";
+@import "gallery-wrapper";
+
+html {
+  padding: auto;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  @include primaryFontStack;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 1400px;
+}

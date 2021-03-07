@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "Roboto Light";
+  font-style: normal;
+  src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.eot");
+  src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.eot#iefix") format("embedded-opentype"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.woff2") format("woff2"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.woff") format("woff"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.ttf") format("opentype"); }
+
+@font-face {
+  font-family: "Roboto Regular";
+  font-style: normal;
+  src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.eot");
+  src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.eot#iefix") format("embedded-opentype"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.woff2") format("woff2"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.woff") format("woff"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.ttf") format("opentype"); }
+
+@media only screen and (min-width: 880px) {
+  /* line 1, Users/nikhil/Desktop/vehicle_feature_patterns/css/scss/tick-tock-pattern.scss */
+  .tt-wrapper {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap; } }
+
+/* line 14, Users/nikhil/Desktop/vehicle_feature_patterns/css/scss/tick-tock-pattern.scss */
+.tt-text-wrapper {
+  color: #000;
+  padding: 1rem;
+  text-align: center;
+  -webkit-box-ordinal-group: 2;
+          order: 1; }
+  @media only screen and (min-width: 880px) {
+    /* line 20, Users/nikhil/Desktop/vehicle_feature_patterns/css/scss/tick-tock-pattern.scss */
+    .tick-tock-feature:nth-child(2n-1) .tt-text-wrapper {
+      -webkit-box-ordinal-group: 1;
+      order: 0; } }
+  @media only screen and (min-width: 880px) {
+    /* line 14, Users/nikhil/Desktop/vehicle_feature_patterns/css/scss/tick-tock-pattern.scss */
+    .tt-text-wrapper {
+      text-align: left;
+      width: 50%;
+      margin: auto; } }
+  @media only screen and (min-width: 1280px) {
+    /* line 14, Users/nikhil/Desktop/vehicle_feature_patterns/css/scss/tick-tock-pattern.scss */
+    .tt-text-wrapper {
+      padding: 1.5rem 1.5rem 1.5rem 10px; } }
+
+/* line 39, Users/nikhil/Desktop/vehicle_feature_patterns/css/scss/tick-tock-pattern.scss */
+.tt-image-wrapper {
+  background-size: cover;
+  background-position: center;
+  width: 100%; }
+  @media only screen and (min-width: 880px) {
+    /* line 39, Users/nikhil/Desktop/vehicle_feature_patterns/css/scss/tick-tock-pattern.scss */
+    .tt-image-wrapper {
+      width: 50%; } }
+
+/* line 49, Users/nikhil/Desktop/vehicle_feature_patterns/css/scss/tick-tock-pattern.scss */
+.tt-heading {
+  font-family: "Roboto Regular", arial, verdana, sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 0 20px;
+  margin-bottom: 10px; }
+
+/* line 57, Users/nikhil/Desktop/vehicle_feature_patterns/css/scss/tick-tock-pattern.scss */
+.tt-text {
+  font-family: "Roboto Light", arial, verdana, sans-serif;
+  font-weight: normal;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 22px; }
+
+/* line 1, Users/nikhil/Desktop/vehicle_feature_patterns/css/scss/section-heading.scss */
+.section-heading-feature {
+  background: #c9c9c9;
+  padding: 60px 0; }
+
+/* line 5, Users/nikhil/Desktop/vehicle_feature_patterns/css/scss/section-heading.scss */
+.sh-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 80%; }
+
+/* line 11, Users/nikhil/Desktop/vehicle_feature_patterns/css/scss/section-heading.scss */
+.sh-sub-title {
+  font-family: "Roboto Regular", arial, verdana, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px; }
+
+/* line 17, Users/nikhil/Desktop/vehicle_feature_patterns/css/scss/section-heading.scss */
+.sh-title {
+  font-family: "Roboto Regular", arial, verdana, sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  margin: 15px auto; }
+
+/* line 24, Users/nikhil/Desktop/vehicle_feature_patterns/css/scss/section-heading.scss */
+.sh-text {
+  font-family: "Roboto Light", arial, verdana, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px; }
+
+/* line 1, Users/nikhil/Desktop/vehicle_feature_patterns/css/scss/gallery-wrapper.scss */
+.section-gallery-feature {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap; }
+  @supports (grid-area: auto) {
+    /* line 1, Users/nikhil/Desktop/vehicle_feature_patterns/css/scss/gallery-wrapper.scss */
+    .section-gallery-feature {
+      display: grid;
+      grid-gap: 5px;
+      grid-template-columns: repeat(auto-fill, minmax(33%, 1fr)); }
+      @media only screen and (min-width: 880px) {
+        /* line 1, Users/nikhil/Desktop/vehicle_feature_patterns/css/scss/gallery-wrapper.scss */
+        .section-gallery-feature {
+          grid-gap: 15px;
+          grid-template-columns: repeat(auto-fill, minmax(20%, 1fr)); } } }
+
+/* line 17, Users/nikhil/Desktop/vehicle_feature_patterns/css/scss/gallery-wrapper.scss */
+.gallery-item {
+  width: 100%;
+  margin-bottom: 2px; }
+  @media only screen and (min-width: 880px) {
+    /* line 17, Users/nikhil/Desktop/vehicle_feature_patterns/css/scss/gallery-wrapper.scss */
+    .gallery-item {
+      width: 24%; } }
+  @supports (grid-area: auto) {
+    /* line 17, Users/nikhil/Desktop/vehicle_feature_patterns/css/scss/gallery-wrapper.scss */
+    .gallery-item {
+      width: auto;
+      margin: 0; } }
+
+/* line 31, Users/nikhil/Desktop/vehicle_feature_patterns/css/scss/gallery-wrapper.scss */
+.gallery-item-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover; }
+
+@supports (grid-area: auto) {
+  /* line 38, Users/nikhil/Desktop/vehicle_feature_patterns/css/scss/gallery-wrapper.scss */
+  .gallery-item-1,
+  .gallery-item-8,
+  .gallery-item-16 {
+    grid-column: auto / span 2;
+    grid-row: auto / span 2; } }
+
+/* line 7, Users/nikhil/Desktop/vehicle_feature_patterns/css/scss/style.scss */
+html {
+  padding: auto;
+  margin: auto;
+  box-sizing: border-box; }
+
+/* line 13, Users/nikhil/Desktop/vehicle_feature_patterns/css/scss/style.scss */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+/* line 21, Users/nikhil/Desktop/vehicle_feature_patterns/css/scss/style.scss */
+body {
+  font-family: "Roboto Regular", arial, verdana, sans-serif;
+  font-weight: normal; }
+
+/* line 25, Users/nikhil/Desktop/vehicle_feature_patterns/css/scss/style.scss */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 1400px; }
