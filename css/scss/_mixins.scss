@@ -1,0 +1,22 @@
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin gridMachine($numCol, $marginRight, $marginBottomPx) {
+  width: (100% - (($numCol - 1) * $marginRight)) / $numCol;
+  margin-bottom: $marginBottomPx;
+  &:nth-child(n) {
+    margin-right: $marginRight;
+  }
+  &:nth-child(#{$numCol}n) {
+    margin-right: 0;
+  }
+}
