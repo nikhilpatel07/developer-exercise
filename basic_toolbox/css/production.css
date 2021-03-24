@@ -10,28 +10,43 @@
   src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.eot");
   src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.eot#iefix") format("embedded-opentype"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.woff2") format("woff2"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.woff") format("woff"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.ttf") format("opentype"); }
 
+@font-face {
+  font-family: "Roboto Light";
+  font-style: normal;
+  src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.eot");
+  src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.eot#iefix") format("embedded-opentype"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.woff2") format("woff2"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.woff") format("woff"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.ttf") format("opentype"); }
+
+@font-face {
+  font-family: "Roboto Regular";
+  font-style: normal;
+  src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.eot");
+  src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.eot#iefix") format("embedded-opentype"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.woff2") format("woff2"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.woff") format("woff"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.ttf") format("opentype"); }
+
 .main {
-  background: #ccc; }
+  background: #ccc;
+  margin: 6px 0; }
+  @media screen and (min-width: 768px) {
+    .main {
+      margin: 4px 0; } }
 
 .toolbox-wrapper-right {
   display: block; }
   @media screen and (min-width: 768px) {
     .toolbox-wrapper-right {
       position: fixed;
-      width: 375px;
-      right: -300px;
+      width: 400px;
+      right: -315px;
       left: auto;
       top: 200px;
-      -webkit-transition: -webkit-transform 250ms ease-in;
-      transition: -webkit-transform 250ms ease-in;
-      transition: transform 250ms ease-in;
-      transition: transform 250ms ease-in, -webkit-transform 250ms ease-in; }
+      -webkit-transition: transform 250ms ease-in;
+      -moz-transition: transform 250ms ease-in;
+      -ms-transition: transform 250ms ease-in;
+      -o-transition: transform 250ms ease-in;
+      transition: transform 250ms ease-in; }
       .toolbox-wrapper-right:hover {
-        -webkit-transform: translateX(-275px);
-                transform: translateX(-275px); } }
+        transform: translateX(-275px); } }
 
 .toolbox-content {
-  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -50,54 +65,46 @@
     .toolbox-item {
       width: 100%; } }
   .toolbox-item:hover .ti-icon-wrapper {
-    background-color: #ff6e6e; }
+    background-color: #bc271a; }
   .toolbox-item:hover .ti-text {
-    background-color: #666; }
+    background-color: #404040; }
 
 .ti-link-right {
-  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-          flex-direction: row;
+  flex-direction: row;
   text-align: center;
   text-decoration: none;
   color: #fff; }
 
 .ti-icon-wrapper {
-  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
-  -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-color: #eb0a1e;
-  padding: 5px;
-  height: 65px;
+  padding: 4px;
+  height: 75px;
   width: 100%;
-  border-right: 1px solid #ff6e6e;
-  border-bottom: 1px solid #ff6e6e; }
+  border-right: 1px solid #eb4e56;
+  border-bottom: 1px solid #eb4e56; }
   @media screen and (min-width: 768px) {
     .ti-icon-wrapper {
-      width: 65px; } }
+      width: 75px; } }
 
 .ti-icon-svg {
   fill: #fff;
+  width: 38px;
+  height: 38px;
   margin: auto;
-  width: 25px;
-  height: 25px; }
+  padding: 3px; }
 
 .ti-icon-text {
   font-family: "Roboto Regular", arial, verdana, sans-serif;
   font-weight: normal;
-  font-size: 13px;
+  font-size: 15px;
   width: 100%;
-  padding: 5px 0 0 0;
   margin: 0 auto;
   color: #fff; }
-  @media screen and (min-width: 768px) {
-    .ti-icon-text {
-      width: 65px; } }
 
 .ti-text {
   display: none; }
@@ -106,21 +113,10 @@
       font-family: "Roboto Regular", arial, verdana, sans-serif;
       font-weight: normal;
       display: block;
-      width: 250px;
-      background-color: #333;
-      border-bottom: 1px solid #666;
+      width: 235px;
+      font-size: 20px;
+      line-height: 26px;
+      padding: 28px 22px;
       text-align: left;
-      font-size: 14px;
-      padding: 28px 15px; } }
-
-@media screen and (min-width: 768px) {
-  .toolbox-wrapper-left {
-    left: -300px; }
-    .toolbox-wrapper-left:hover {
-      -webkit-transform: translateX(275px);
-              transform: translateX(275px); } }
-
-.ti-link-left {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-          flex-direction: row-reverse; }
+      background-color: #333;
+      border-bottom: 1px solid #4d4d4d; } }
