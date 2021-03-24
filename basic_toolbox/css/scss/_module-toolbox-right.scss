@@ -1,5 +1,10 @@
 .main {
   background: #ccc;
+  margin: 6px 0;
+
+  @include respond-screen($bp-md) {
+    margin: 4px 0;
+  }
 }
 
 .toolbox-wrapper-right {
@@ -7,11 +12,11 @@
 
   @include respond-screen($bp-md) {
     position: fixed;
-    width: 375px;
-    right: -300px;
+    width: 400px;
+    right: -315px;
     left: auto;
     top: 200px;
-    transition: transform 250ms ease-in;
+    @include Transition(transform, 250);
 
     &:hover {
       transform: translateX(-275px);
@@ -44,11 +49,11 @@
 
   &:hover {
     .ti-icon-wrapper {
-      background-color: $primaryCol-lt;
+      background-color: $primaryColHover;
     }
 
     .ti-text {
-      background-color: $secondaryCol-lt;
+      background-color: $secondaryColHover;
     }
   }
 }
@@ -67,35 +72,31 @@
   flex-wrap: wrap;
   justify-content: center;
   background-color: $primaryCol;
-  padding: 5px;
-  height: 65px;
+  padding: 4px;
+  height: 75px;
   width: 100%;
   border-right: 1px solid $primaryCol-lt;
   border-bottom: 1px solid $primaryCol-lt;
 
   @include respond-screen($bp-md) {
-    width: 65px;
+    width: 75px;
   }
 }
 
 .ti-icon-svg {
   fill: #fff;
+  width: 38px;
+  height: 38px;
   margin: auto;
-  width: 25px;
-  height: 25px;
+  padding: 3px;
 }
 
 .ti-icon-text {
   @include primaryFontStack;
-  font-size: 13px;
+  font-size: 15px;
   width: 100%;
-  padding: 5px 0 0 0;
   margin: 0 auto;
   color: #fff;
-
-  @include respond-screen($bp-md) {
-    width: 65px;
-  }
 }
 
 .ti-text {
@@ -104,11 +105,12 @@
   @include respond-screen($bp-md) {
     @include primaryFontStack;
     display: block;
-    width: 250px;
+    width: 235px;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 28px 22px;
+    text-align: left;
     background-color: $secondaryCol;
     border-bottom: 1px solid $secondaryCol-lt;
-    text-align: left;
-    font-size: 14px;
-    padding: 28px 15px;
   }
 }

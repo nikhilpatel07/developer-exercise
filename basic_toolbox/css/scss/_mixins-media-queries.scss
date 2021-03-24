@@ -1,0 +1,17 @@
+$media-queries: true !default;
+
+@mixin respond-screen($param-width, $max-width-flag: false) {
+    @if $media-queries {
+        @if $max-width-flag {
+            @media screen and (max-width: $param-width) {
+                @content;
+            }
+        }
+
+        @else {
+            @media screen and (min-width: $param-width) {
+                @content;
+            }
+        }
+    }
+}

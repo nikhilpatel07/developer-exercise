@@ -1,6 +1,6 @@
 .toolbox-wrapper-left {
   @include respond-screen($bp-md) {
-    left: -300px;
+    left: -315px;
 
     &:hover {
       transform: translateX(275px);
