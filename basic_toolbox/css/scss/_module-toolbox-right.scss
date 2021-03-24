@@ -1,0 +1,114 @@
+.main {
+  background: #ccc;
+}
+
+.toolbox-wrapper-right {
+  display: block;
+
+  @include respond-screen($bp-md) {
+    position: fixed;
+    width: 375px;
+    right: -300px;
+    left: auto;
+    top: 200px;
+    transition: transform 250ms ease-in;
+
+    &:hover {
+      transform: translateX(-275px);
+    }
+  }
+}
+
+.toolbox-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  @include respond-screen($bp-md) {
+    position: absolute;
+  }
+}
+
+.toolbox-item {
+  list-style: none;
+  width: 33.33%;
+
+  @include respond-screen($bp-sm) {
+    width: 16.66%;
+  }
+
+  @include respond-screen($bp-md) {
+    width: 100%;
+  }
+
+  &:hover {
+    .ti-icon-wrapper {
+      background-color: $primaryCol-lt;
+    }
+
+    .ti-text {
+      background-color: $secondaryCol-lt;
+    }
+  }
+}
+
+.ti-link-right {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.ti-icon-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: $primaryCol;
+  padding: 5px;
+  height: 65px;
+  width: 100%;
+  border-right: 1px solid $primaryCol-lt;
+  border-bottom: 1px solid $primaryCol-lt;
+
+  @include respond-screen($bp-md) {
+    width: 65px;
+  }
+}
+
+.ti-icon-svg {
+  fill: #fff;
+  margin: auto;
+  width: 25px;
+  height: 25px;
+}
+
+.ti-icon-text {
+  @include primaryFontStack;
+  font-size: 13px;
+  width: 100%;
+  padding: 5px 0 0 0;
+  margin: 0 auto;
+  color: #fff;
+
+  @include respond-screen($bp-md) {
+    width: 65px;
+  }
+}
+
+.ti-text {
+  display: none;
+
+  @include respond-screen($bp-md) {
+    @include primaryFontStack;
+    display: block;
+    width: 250px;
+    background-color: $secondaryCol;
+    border-bottom: 1px solid $secondaryCol-lt;
+    text-align: left;
+    font-size: 14px;
+    padding: 28px 15px;
+  }
+}
