@@ -1,3 +1,3 @@
-# imotor-gatsby
+# Developer Exercise
 
-Dive into Gatsby World
+Dive into ~~Gatsby World~~ `GIT World`
