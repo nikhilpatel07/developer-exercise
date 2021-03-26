@@ -4,14 +4,10 @@
   @include respond-screen($bp-md) {
     position: fixed;
     width: 400px;
-    right: -315px;
+    right: -331px;
     left: auto;
     top: 200px;
     @include Transition(transform, 250);
-
-    &:hover {
-      transform: translateX(-275px);
-    }
   }
 }
 
@@ -38,14 +34,14 @@
     width: 100%;
   }
 
-  &:hover {
-    .ti-icon-wrapper {
-      background-color: $primaryColHover;
-    }
+  &:first-child .ti-icon-wrapper {
+    border-top-right-radius: 37px;
+    border-top-left-radius: 37px;
+  }
 
-    .ti-text {
-      background-color: $secondaryColHover;
-    }
+  &:last-child .ti-icon-wrapper {
+    border-bottom-right-radius: 37px;
+    border-bottom-left-radius: 37px;
   }
 }
 
@@ -56,6 +52,17 @@
   text-align: center;
   text-decoration: none;
   color: #fff;
+
+  &:hover {
+    .ti-icon-wrapper {
+      background-color: $primaryColHover;
+    }
+
+    .ti-text {
+      background-color: #fff;
+      transform: translateX(-420px);
+    }
+  }
 }
 
 .ti-icon-wrapper {
@@ -64,13 +71,13 @@
   justify-content: center;
   background-color: $primaryCol;
   padding: 4px;
-  height: 75px;
+  height: 60px;
   width: 100%;
   border-right: 1px solid $primaryCol-lt;
   border-bottom: 1px solid $primaryCol-lt;
 
   @include respond-screen($bp-md) {
-    width: 75px;
+    width: 60px;
   }
 }
 
@@ -88,20 +95,31 @@
   width: 100%;
   margin: 0 auto;
   color: #fff;
+  display: none;
 }
 
-.ti-text {
+.ti-text-wrapper {
   display: none;
 
   @include respond-screen($bp-md) {
-    @include primaryFontStack;
+    position: absolute;
     display: block;
-    width: 235px;
-    font-size: 20px;
-    line-height: 26px;
-    padding: 28px 22px;
-    text-align: left;
-    background-color: $secondaryCol;
-    border-bottom: 1px solid $secondaryCol-lt;
+    width: 100%;
+    margin: 12px auto;
+    border-radius: 25px;
+    z-index: -1;
+    opacity: 2;
+    @include Transition(transform, 250);
   }
+}
+
+.ti-text {
+  @include primaryFontStack;
+  font-size: 14px;
+  line-height: 20px;
+  color: $primaryCol;
+  width: auto;
+  border-radius: 25px;
+  padding: 10px 5px;
+  float: right;
 }
