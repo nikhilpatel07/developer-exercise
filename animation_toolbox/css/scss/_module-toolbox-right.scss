@@ -1,0 +1,116 @@
+.main {
+  background: #ccc;
+  margin: 6px 0;
+
+  @include respond-screen($bp-md) {
+    margin: 4px 0;
+  }
+}
+
+.toolbox-wrapper-right {
+  display: block;
+
+  @include respond-screen($bp-md) {
+    position: fixed;
+    width: 400px;
+    right: -315px;
+    left: auto;
+    top: 200px;
+    @include Transition(transform, 250);
+
+    &:hover {
+      transform: translateX(-275px);
+    }
+  }
+}
+
+.toolbox-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  @include respond-screen($bp-md) {
+    position: absolute;
+  }
+}
+
+.toolbox-item {
+  list-style: none;
+  width: 33.33%;
+
+  @include respond-screen($bp-sm) {
+    width: 16.66%;
+  }
+
+  @include respond-screen($bp-md) {
+    width: 100%;
+  }
+
+  &:hover {
+    .ti-icon-wrapper {
+      background-color: $primaryColHover;
+    }
+
+    .ti-text {
+      background-color: $secondaryColHover;
+    }
+  }
+}
+
+.ti-link-right {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.ti-icon-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: $primaryCol;
+  padding: 4px;
+  height: 75px;
+  width: 100%;
+  border-right: 1px solid $primaryCol-lt;
+  border-bottom: 1px solid $primaryCol-lt;
+
+  @include respond-screen($bp-md) {
+    width: 75px;
+  }
+}
+
+.ti-icon-svg {
+  fill: #fff;
+  width: 38px;
+  height: 38px;
+  margin: auto;
+  padding: 3px;
+}
+
+.ti-icon-text {
+  @include primaryFontStack;
+  font-size: 15px;
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.ti-text {
+  display: none;
+
+  @include respond-screen($bp-md) {
+    @include primaryFontStack;
+    display: block;
+    width: 235px;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 28px 22px;
+    text-align: left;
+    background-color: $secondaryCol;
+    border-bottom: 1px solid $secondaryCol-lt;
+  }
+}
