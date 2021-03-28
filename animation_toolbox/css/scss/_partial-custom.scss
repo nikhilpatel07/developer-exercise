@@ -1,6 +1,16 @@
 @import "variables";
 @import "external-fonts";
 
-@import "module-toolbox-right";
-// Below imported partial is used to float toolbox on left (as per requirement)
-// @import "module-toolbox-left";
+// Remove "//" from bewlow @import partial to see Pill Shape toolbox on Right
+@import "module-toolbox-pill-right";
+
+// Remove "//" from bewlow @import partial to see Circle Shape toolbox on Right
+@import "module-toolbox-circle-right";
+
+//Once comments removed by removing "//" You would be able to see Circle/Pills Toolbox depend on whether you have "@import "module-toolbox-pill-right" or "@import "module-toolbox-circle-right" active.
+
+// 1. To see Pill Toolbox on left Remove "//" from "@import "module-toolbox-pill-right" only.
+// 2. To see Circles Toolbox on Left Remove "//" from @import "module-toolbox-pill-right" and @import "module-toolbox-circle-right";
+
+// Below imported partial is used to float toolbox on left (as per requirement please check above comments for detailed instructions)
+@import "module-toolbox-left";
