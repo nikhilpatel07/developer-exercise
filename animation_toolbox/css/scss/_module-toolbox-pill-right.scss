@@ -1,0 +1,174 @@
+.toolbox-wrapper-right {
+  display: block;
+
+  @include respond-screen($bp-md) {
+    position: fixed;
+    width: 400px;
+    top: 200px;
+    right: -315px;
+    left: auto;
+  }
+}
+
+.toolbox-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  background-color: $pageBackground;
+
+  @include respond-screen($bp-md) {
+    position: absolute;
+  }
+}
+
+.toolbox-item {
+  list-style: none;
+  width: 33.33%;
+
+  @include respond-screen($bp-sm) {
+    width: 16.66%;
+  }
+
+  @include respond-screen($bp-md) {
+    width: 100%;
+  }
+
+  &:first-child .ti-icon-wrapper {
+    @include respond-screen($bp-md) {
+      border-top-right-radius: 35px;
+      border-top-left-radius: 35px;
+    }
+  }
+
+  &:last-child .ti-icon-wrapper {
+    @include respond-screen($bp-md) {
+      border-bottom-right-radius: 35px;
+      border-bottom-left-radius: 35px;
+    }
+  }
+
+  &:hover {
+    .ti-text-wrapper {
+      transform: translateX(-420px);
+      background-color: transparent;
+    }
+  }
+
+  &:nth-child(1) {
+    .ti-text-wrapper,
+    .ti-icon-svg {
+      animation-delay: 100ms;
+    }
+  }
+
+  &:nth-child(2) {
+    .ti-text-wrapper,
+    .ti-icon-svg {
+      animation-delay: 200ms;
+    }
+  }
+
+  &:nth-child(3) {
+    .ti-text-wrapper,
+    .ti-icon-svg {
+      animation-delay: 300ms;
+    }
+  }
+
+  &:nth-child(4) {
+    .ti-text-wrapper,
+    .ti-icon-svg {
+      animation-delay: 400ms;
+    }
+  }
+
+  &:nth-child(5) {
+    .ti-text-wrapper,
+    .ti-icon-svg {
+      animation-delay: 500ms;
+    }
+  }
+
+  &:nth-child(6) {
+    .ti-text-wrapper,
+    .ti-icon-svg {
+      animation-delay: 600ms;
+    }
+  }
+}
+
+.ti-link-right {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.ti-icon-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: $secondaryCol;
+  padding: 4px;
+  height: 60px;
+  width: 100%;
+  border: 1px solid $secondaryCol-lt;
+
+  @include respond-screen($bp-md) {
+    width: 60px;
+  }
+}
+
+.ti-icon-svg {
+  fill: $primaryCol;
+  width: 35px;
+  height: 35px;
+  margin: auto;
+  padding: 3px;
+  animation: animateIcons 420ms ease-in-out;
+}
+
+.ti-icon-text {
+  @include primaryFontStack;
+  font-size: 15px;
+  width: 100%;
+  margin: 0 auto;
+  color: $primaryCol;
+
+  @include respond-screen($bp-md) {
+    display: none;
+  }
+}
+
+.ti-text-wrapper {
+  display: none;
+
+  @include respond-screen($bp-md) {
+    position: absolute;
+    display: block;
+    width: 100%;
+    margin: 12px auto;
+    border-radius: 25px;
+    z-index: -1000;
+    opacity: 2;
+    animation-name: animateTextRight;
+    animation-duration: 2s;
+    @include Transition(transform, 350);
+  }
+}
+
+.ti-text {
+  @include primaryFontStack;
+  font-size: 22px;
+  line-height: 28px;
+  color: $primaryCol;
+  background-color: $secondaryCol;
+  border: 1px solid $secondaryCol-lt;
+  width: auto;
+  border-radius: 25px;
+  padding: 10px 20px;
+  float: right;
+}

@@ -1,0 +1,13 @@
+.toolbox-item-circle {
+  @include respond-screen($bp-md) {
+    margin-bottom: 12px;
+  }
+}
+
+.ti-icon-wrapper {
+  @include respond-screen($bp-md) {
+    border-radius: 50%;
+    height: 58px;
+    width: 58px;
+  }
+}

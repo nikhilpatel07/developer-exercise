@@ -1,13 +1,27 @@
 .toolbox-wrapper-left {
   @include respond-screen($bp-md) {
     left: -315px;
+  }
+}
 
-    &:hover {
-      transform: translateX(275px);
-    }
+.toolbox-item {
+  &:hover .ti-text-wrapper {
+    transform: translateX(420px);
+    opacity: 1;
   }
 }
 
 .ti-link-left {
   flex-direction: row-reverse;
+}
+
+.ti-text-wrapper {
+  @include respond-screen($bp-md) {
+    flex-direction: row-reverse;
+    animation-name: animateTextLeft;
+  }
+}
+
+.ti-text {
+  float: left;
 }
