@@ -1,5 +1,5 @@
 .main {
-  background: #ccc;
+  background: $pageBackground;
   margin: 6px 0;
 
   @include respond-screen($bp-md) {
