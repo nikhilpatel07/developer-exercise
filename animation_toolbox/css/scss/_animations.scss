@@ -1,0 +1,54 @@
+@keyframes textAnimation {
+  from {
+    right: 200px;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes animateIcons {
+  0% {
+    transform: scale(0) translate(0, -15px);
+  }
+
+  100% {
+    transform: scale(1) translate(0, 0);
+  }
+}
+
+@keyframes animateTextRight {
+  0% {
+    transform: scale(0.5) translate(-420px, 0);
+  }
+
+  25% {
+    transform: scale(1) translate(-420px, 0);
+  }
+
+  75% {
+    transform: scale(1) translate(-420px, 0);
+  }
+
+  100% {
+    transform: scale(0.5) translate(0, 0);
+  }
+}
+
+@keyframes animateTextLeft {
+  0% {
+    transform: scale(0.5) translate(420px, 0);
+  }
+
+  25% {
+    transform: scale(1) translate(420px, 0);
+  }
+
+  75% {
+    transform: scale(1) translate(420px, 0);
+  }
+
+  100% {
+    transform: scale(0.5) translate(0, 0);
+  }
+}
