@@ -1,7 +1,7 @@
 @mixin Transition($property, $milliSeconds) {
-  -webkit-transition: $property $milliSeconds + ms ease-in;
-  -moz-transition: $property $milliSeconds + ms ease-in;
-  -ms-transition: $property $milliSeconds + ms ease-in;
-  -o-transition: $property $milliSeconds + ms ease-in;
-  transition: $property $milliSeconds + ms ease-in;
+  -webkit-transition: $property $milliSeconds + ms ease-in-out;
+  -moz-transition: $property $milliSeconds + ms ease-in-out;
+  -ms-transition: $property $milliSeconds + ms ease-in-out;
+  -o-transition: $property $milliSeconds + ms ease-in-out;
+  transition: $property $milliSeconds + ms ease-in-out;
 }
