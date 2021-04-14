@@ -32,7 +32,7 @@
   font-size: 14px;
   line-height: 16px;
   list-style: none;
-  width: 59%;
+  width: 60%;
   text-align: center;
   color: #fff;
   background-color: $buttonCol;
@@ -44,9 +44,7 @@
   @include Transition(color, 350);
 
   @include respond-screen($bp-md) {
-    min-width: 8%;
     width: auto;
-    margin: 0 5px;
   }
 
   &:hover,

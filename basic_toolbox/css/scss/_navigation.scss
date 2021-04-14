@@ -43,9 +43,7 @@
   @include Transition(color, 350);
 
   @include respond-screen($bp-md) {
-    min-width: 8%;
     width: auto;
-    margin: 0 5px;
   }
 
   &:hover,

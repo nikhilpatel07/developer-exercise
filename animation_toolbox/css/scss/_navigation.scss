@@ -22,7 +22,6 @@
     -ms-flex-pack: center;
     justify-content: center;
     color: $navBackground;
-    text-decoration: none;
   }
 }
 
@@ -43,9 +42,7 @@
   @include Transition(color, 350);
 
   @include respond-screen($bp-md) {
-    min-width: 8%;
     width: auto;
-    margin: 0 5px;
   }
 
   &:hover,
