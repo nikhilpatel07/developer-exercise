@@ -1,0 +1,56 @@
+.header-wrapper {
+  overflow: hidden;
+  background-color: $navBackground;
+}
+
+.nav-wrapper {
+  text-align: center;
+}
+
+.nav-item-list {
+  width: 100%;
+  padding: 0;
+  margin: 10px auto;
+
+  @include respond-screen($bp-md) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: $navBackground;
+    text-decoration: none;
+  }
+}
+
+.nav-item-link {
+  @include primaryFontStack;
+  font-size: 14px;
+  line-height: 16px;
+  list-style: none;
+  width: 48%;
+  text-align: center;
+  color: #fff;
+  background-color: $buttonCol;
+  margin: 2px;
+  display: inline-block;
+  padding: 15px 30px;
+  cursor: pointer;
+  text-decoration: none;
+  @include Transition(color, 350);
+
+  @include respond-screen($bp-md) {
+    min-width: 8%;
+    width: auto;
+    margin: 0 5px;
+  }
+
+  &:hover,
+  &.active {
+    background-color: #fff;
+    color: $buttonCol;
+  }
+}

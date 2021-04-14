@@ -1,8 +1,12 @@
 .main {
   background: $pageBackground;
-  margin: 6px 0;
+  margin: 0 auto;
+}
 
-  @include respond-screen($bp-md) {
-    margin: 4px 0;
-  }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
