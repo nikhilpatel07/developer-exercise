@@ -1,40 +1,46 @@
 .header-wrapper {
   overflow: hidden;
   background-color: $navBackground;
-  margin-bottom: 50px;
+}
+
+.nav-wrapper {
+  text-align: center;
 }
 
 .nav-item-list {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  color: $navBackground;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+  padding: 0;
+  margin: 10px auto;
 
-.nav-item {
-  list-style: none;
+  @include respond-screen($bp-md) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: $navBackground;
+    text-decoration: none;
+  }
 }
 
 .nav-item-link {
   @include primaryFontStack;
-  background: $buttonCol;
+  font-size: 14px;
+  line-height: 16px;
+  list-style: none;
+  width: 59%;
+  text-align: center;
   color: #fff;
+  background-color: $buttonCol;
+  margin: 2px;
   display: inline-block;
-  width: 45%;
-  padding: 12px 18px;
-  margin: 10px auto;
-  letter-spacing: 0.8px;
+  padding: 15px 30px;
+  cursor: pointer;
   text-decoration: none;
-  @include Transition(transform, 350);
+  @include Transition(color, 350);
 
   @include respond-screen($bp-md) {
     min-width: 8%;
@@ -44,7 +50,7 @@
 
   &:hover,
   &.active {
-    background: #fff;
+    background-color: #fff;
     color: $buttonCol;
   }
 }
