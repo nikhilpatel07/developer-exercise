@@ -1,0 +1,50 @@
+.header-wrapper {
+  overflow: hidden;
+  background-color: $navBackground;
+  margin-bottom: 50px;
+}
+
+.nav-item-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: $navBackground;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-item-link {
+  @include primaryFontStack;
+  background: $buttonCol;
+  color: #fff;
+  display: inline-block;
+  width: 45%;
+  padding: 12px 18px;
+  margin: 10px auto;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+  @include Transition(transform, 350);
+
+  @include respond-screen($bp-md) {
+    min-width: 8%;
+    width: auto;
+    margin: 0 5px;
+  }
+
+  &:hover,
+  &.active {
+    background: #fff;
+    color: $buttonCol;
+  }
+}

@@ -1,0 +1,46 @@
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+$media-queries: true !default;
+
+@mixin respond-screen($param-width, $max-width-flag: false) {
+  @if $media-queries {
+    @if $max-width-flag {
+      @media screen and (max-width: $param-width) {
+        @content;
+      }
+    } @else {
+      @media screen and (min-width: $param-width) {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin Transition($property, $milliSeconds) {
+  -webkit-transition: $property $milliSeconds + ms ease-in-out;
+  -moz-transition: $property $milliSeconds + ms ease-in-out;
+  -ms-transition: $property $milliSeconds + ms ease-in-out;
+  -o-transition: $property $milliSeconds + ms ease-in-out;
+  transition: $property $milliSeconds + ms ease-in-out;
+}
+
+@mixin gridMachine($numCol, $marginRight, $marginBottomPx) {
+  width: (100% - (($numCol - 1) * $marginRight)) / $numCol;
+  margin-bottom: $marginBottomPx;
+  &:nth-child(n) {
+    margin-right: $marginRight;
+  }
+  &:nth-child(#{$numCol}n) {
+    margin-right: 0;
+  }
+}
