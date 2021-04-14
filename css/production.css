@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Roboto Light";
+  font-style: normal;
+  src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.eot");
+  src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.eot#iefix") format("embedded-opentype"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.woff2") format("woff2"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.woff") format("woff"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.ttf") format("opentype"); }
+
+@font-face {
+  font-family: "Roboto Regular";
+  font-style: normal;
+  src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.eot");
+  src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.eot#iefix") format("embedded-opentype"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.woff2") format("woff2"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.woff") format("woff"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.ttf") format("opentype"); }
+
+.main {
+  background: #666666;
+  margin: 0 auto; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1500px; }
+
+.blog-logo-wrapper {
+  text-align: center; }
+
+.blog-logo {
+  width: 75px; }
+
+.welcome-heading-wrapper {
+  margin: auto 0;
+  padding: 50px 50px; }
+
+.wh-title {
+  font-family: "Roboto Regular", arial, verdana, sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff; }
+
+.wh-description {
+  font-family: "Roboto Light", arial, verdana, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #fff; }
+
+.whd-list {
+  list-style: none; }
+
+.whd-list-item {
+  font-family: "Roboto Light", arial, verdana, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff; }
+
+.primary-button-wrapper {
+  width: 100%;
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .primary-button-wrapper {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+
+.pb-item {
+  font-family: "Roboto Regular", arial, verdana, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  background: #539ec8;
+  color: #fff;
+  display: inline-block;
+  width: 45%;
+  padding: 12px 18px;
+  margin: 10px auto;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+  -webkit-transition: transform 350ms ease-in-out;
+  -moz-transition: transform 350ms ease-in-out;
+  -ms-transition: transform 350ms ease-in-out;
+  -o-transition: transform 350ms ease-in-out;
+  transition: transform 350ms ease-in-out; }
+  @media screen and (min-width: 768px) {
+    .pb-item {
+      min-width: 8%;
+      width: auto;
+      margin: 0 5px; } }
+  .pb-item:hover {
+    background: #fff;
+    color: #539ec8; }

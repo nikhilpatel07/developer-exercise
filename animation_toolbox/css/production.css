@@ -1,0 +1,279 @@
+@keyframes textAnimation {
+  from {
+    right: 200px; }
+  to {
+    left: 0; } }
+
+@keyframes animateIcons {
+  0% {
+    transform: scale(0) translate(0, -15px); }
+  100% {
+    transform: scale(1) translate(0, 0); } }
+
+@keyframes animateTextRight {
+  0% {
+    transform: scale(0.5) translate(-420px, 0); }
+  25% {
+    transform: scale(1) translate(-420px, 0); }
+  75% {
+    transform: scale(1) translate(-420px, 0); }
+  100% {
+    transform: scale(0.5) translate(0, 0); } }
+
+@keyframes animateTextLeft {
+  0% {
+    transform: scale(0.5) translate(420px, 0); }
+  25% {
+    transform: scale(1) translate(420px, 0); }
+  75% {
+    transform: scale(1) translate(420px, 0); }
+  100% {
+    transform: scale(0.5) translate(0, 0); } }
+
+@font-face {
+  font-family: "Roboto Light";
+  font-style: normal;
+  src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.eot");
+  src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.eot#iefix") format("embedded-opentype"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.woff2") format("woff2"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.woff") format("woff"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.ttf") format("opentype"); }
+
+@font-face {
+  font-family: "Roboto Regular";
+  font-style: normal;
+  src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.eot");
+  src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.eot#iefix") format("embedded-opentype"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.woff2") format("woff2"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.woff") format("woff"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.ttf") format("opentype"); }
+
+.main {
+  background: #666666;
+  margin: 0 auto; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+@font-face {
+  font-family: "Roboto Light";
+  font-style: normal;
+  src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.eot");
+  src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.eot#iefix") format("embedded-opentype"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.woff2") format("woff2"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.woff") format("woff"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.ttf") format("opentype"); }
+
+@font-face {
+  font-family: "Roboto Regular";
+  font-style: normal;
+  src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.eot");
+  src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.eot#iefix") format("embedded-opentype"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.woff2") format("woff2"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.woff") format("woff"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.ttf") format("opentype"); }
+
+.header-wrapper {
+  overflow: hidden;
+  background-color: #333; }
+
+.nav-wrapper {
+  text-align: center; }
+
+.nav-item-list {
+  width: 100%;
+  padding: 0;
+  margin: 10px auto; }
+  @media screen and (min-width: 768px) {
+    .nav-item-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      color: #333;
+      text-decoration: none; } }
+
+.nav-item-link {
+  font-family: "Roboto Regular", arial, verdana, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  list-style: none;
+  width: 48%;
+  text-align: center;
+  color: #fff;
+  background-color: #539ec8;
+  margin: 2px;
+  display: inline-block;
+  padding: 15px 30px;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: color 350ms ease-in-out;
+  -moz-transition: color 350ms ease-in-out;
+  -ms-transition: color 350ms ease-in-out;
+  -o-transition: color 350ms ease-in-out;
+  transition: color 350ms ease-in-out; }
+  @media screen and (min-width: 768px) {
+    .nav-item-link {
+      min-width: 8%;
+      width: auto;
+      margin: 0 5px; } }
+  .nav-item-link:hover, .nav-item-link.active {
+    background-color: #fff;
+    color: #539ec8; }
+
+.toolbox-wrapper-right {
+  display: block; }
+  @media screen and (min-width: 768px) {
+    .toolbox-wrapper-right {
+      position: fixed;
+      width: 400px;
+      top: 200px;
+      right: -315px;
+      left: auto; } }
+
+.toolbox-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  background-color: #666666; }
+  @media screen and (min-width: 768px) {
+    .toolbox-content {
+      position: absolute; } }
+
+.toolbox-item {
+  list-style: none;
+  width: 33.33%; }
+  @media screen and (min-width: 568px) {
+    .toolbox-item {
+      width: 16.66%; } }
+  @media screen and (min-width: 768px) {
+    .toolbox-item {
+      width: 100%; } }
+  @media screen and (min-width: 768px) {
+    .toolbox-item:first-child .ti-icon-wrapper {
+      border-top-right-radius: 35px;
+      border-top-left-radius: 35px; } }
+  @media screen and (min-width: 768px) {
+    .toolbox-item:last-child .ti-icon-wrapper {
+      border-bottom-right-radius: 35px;
+      border-bottom-left-radius: 35px; } }
+  .toolbox-item:hover .ti-text-wrapper {
+    transform: translateX(-420px);
+    background-color: transparent; }
+  .toolbox-item:nth-child(1) .ti-text-wrapper,
+  .toolbox-item:nth-child(1) .ti-icon-svg {
+    animation-delay: 100ms; }
+  .toolbox-item:nth-child(2) .ti-text-wrapper,
+  .toolbox-item:nth-child(2) .ti-icon-svg {
+    animation-delay: 200ms; }
+  .toolbox-item:nth-child(3) .ti-text-wrapper,
+  .toolbox-item:nth-child(3) .ti-icon-svg {
+    animation-delay: 300ms; }
+  .toolbox-item:nth-child(4) .ti-text-wrapper,
+  .toolbox-item:nth-child(4) .ti-icon-svg {
+    animation-delay: 400ms; }
+  .toolbox-item:nth-child(5) .ti-text-wrapper,
+  .toolbox-item:nth-child(5) .ti-icon-svg {
+    animation-delay: 500ms; }
+  .toolbox-item:nth-child(6) .ti-text-wrapper,
+  .toolbox-item:nth-child(6) .ti-icon-svg {
+    animation-delay: 600ms; }
+
+.ti-link-right {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  text-decoration: none;
+  color: #fff; }
+
+.ti-icon-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f3f5f6;
+  padding: 4px;
+  height: 60px;
+  width: 100%;
+  border: 1px solid #ccc; }
+  @media screen and (min-width: 768px) {
+    .ti-icon-wrapper {
+      width: 60px; } }
+
+.ti-icon-svg {
+  fill: #d7302c;
+  width: 35px;
+  height: 35px;
+  margin: auto;
+  padding: 3px;
+  animation: animateIcons 420ms ease-in-out; }
+
+.ti-icon-text {
+  font-family: "Roboto Regular", arial, verdana, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  width: 100%;
+  margin: 0 auto;
+  color: #d7302c; }
+  @media screen and (min-width: 768px) {
+    .ti-icon-text {
+      display: none; } }
+
+.ti-text-wrapper {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .ti-text-wrapper {
+      position: absolute;
+      display: block;
+      width: 100%;
+      margin: 12px auto;
+      border-radius: 25px;
+      z-index: -1000;
+      opacity: 2;
+      animation-name: animateTextRight;
+      animation-duration: 2s;
+      -webkit-transition: transform 350ms ease-in-out;
+      -moz-transition: transform 350ms ease-in-out;
+      -ms-transition: transform 350ms ease-in-out;
+      -o-transition: transform 350ms ease-in-out;
+      transition: transform 350ms ease-in-out; } }
+
+.ti-text {
+  font-family: "Roboto Regular", arial, verdana, sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 28px;
+  color: #d7302c;
+  background-color: #f3f5f6;
+  border: 1px solid #ccc;
+  width: auto;
+  border-radius: 25px;
+  padding: 10px 20px;
+  float: right; }
+
+@media screen and (min-width: 768px) {
+  .toolbox-item-circle {
+    margin-bottom: 12px; } }
+
+@media screen and (min-width: 768px) {
+  .ti-icon-wrapper {
+    border-radius: 50%;
+    height: 58px;
+    width: 58px; } }
+
+@media screen and (min-width: 768px) {
+  .toolbox-wrapper-left {
+    left: -315px; } }
+
+.toolbox-item:hover .ti-text-wrapper {
+  transform: translateX(420px);
+  opacity: 1; }
+
+.ti-link-left {
+  flex-direction: row-reverse; }
+
+@media screen and (min-width: 768px) {
+  .ti-text-wrapper {
+    flex-direction: row-reverse;
+    animation-name: animateTextLeft; } }
+
+.ti-text {
+  float: left; }

@@ -1,0 +1,212 @@
+html {
+  padding: auto;
+  margin: auto;
+  box-sizing: border-box; }
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 1500px; }
+
+.main {
+  background: #666666;
+  margin: 0 auto; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  font-family: "Roboto Regular", arial, verdana, sans-serif;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Roboto Light";
+  font-style: normal;
+  src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.eot");
+  src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.eot#iefix") format("embedded-opentype"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.woff2") format("woff2"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.woff") format("woff"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Light.ttf") format("opentype"); }
+
+@font-face {
+  font-family: "Roboto Regular";
+  font-style: normal;
+  src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.eot");
+  src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.eot#iefix") format("embedded-opentype"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.woff2") format("woff2"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.woff") format("woff"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.ttf") format("opentype"); }
+
+@media only screen and (min-width: 880px) {
+  .tt-wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; } }
+
+.tt-text-wrapper {
+  color: #000;
+  padding: 1rem;
+  text-align: center;
+  order: 0; }
+  @media only screen and (min-width: 880px) {
+    .tick-tock-feature:nth-child(2n-1) .tt-text-wrapper {
+      -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 1;
+      order: 1; } }
+  @media only screen and (min-width: 880px) {
+    .tt-text-wrapper {
+      text-align: left;
+      width: 50%;
+      margin: auto; } }
+  @media only screen and (min-width: 1280px) {
+    .tt-text-wrapper {
+      padding: 1.5rem 1.5rem 1.5rem 10px; } }
+
+.tt-image-wrapper {
+  background-size: cover;
+  background-position: center;
+  width: 100%; }
+  @media only screen and (min-width: 880px) {
+    .tt-image-wrapper {
+      width: 50%; } }
+
+.tt-heading {
+  font-family: "Roboto Regular", arial, verdana, sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 0 20px;
+  margin-bottom: 10px; }
+
+.tt-text {
+  font-family: "Roboto Light", arial, verdana, sans-serif;
+  font-weight: normal;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 22px; }
+
+.section-heading-feature {
+  background: #f2f2f2;
+  padding: 65px 0; }
+
+.sh-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 58%; }
+
+.sh-sub-title {
+  font-family: "Roboto Regular", arial, verdana, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.5px;
+  color: #a0a2a5;
+  padding: 28px 0; }
+
+.sh-title {
+  font-family: "Roboto Regular", arial, verdana, sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  margin: 0 auto; }
+
+.sh-text {
+  font-family: "Roboto Light", arial, verdana, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 30px 0; }
+
+.section-gallery-feature {
+  display: flex;
+  flex-wrap: wrap; }
+  @supports (grid-area: auto) {
+    .section-gallery-feature {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(auto-fill, minmax(25%, 1fr)); }
+      @media only screen and (min-width: 880px) {
+        .section-gallery-feature {
+          grid-template-columns: repeat(auto-fill, minmax(20%, 1fr)); } } }
+
+.gallery-item {
+  width: 100%;
+  margin-bottom: 2px; }
+  @media only screen and (min-width: 880px) {
+    .gallery-item {
+      width: 24%; } }
+  @supports (grid-area: auto) {
+    .gallery-item {
+      width: auto;
+      margin: 0; } }
+
+.gallery-item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover; }
+
+@supports (grid-area: auto) {
+  .gallery-item-1,
+  .gallery-item-8,
+  .gallery-item-16 {
+    grid-column: auto / span 2;
+    grid-row: auto / span 2; } }
+
+.header-wrapper {
+  overflow: hidden;
+  background-color: #333;
+  margin-bottom: 50px; }
+
+.nav-wrapper {
+  text-align: center; }
+
+.nav-item-list {
+  width: 100%;
+  padding: 0;
+  margin: 10px auto; }
+  @media screen and (min-width: 800px) {
+    .nav-item-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      color: #333;
+      text-decoration: none; } }
+
+.nav-item-link {
+  font-family: "Roboto Regular", arial, verdana, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  list-style: none;
+  width: 59%;
+  text-align: center;
+  color: #fff;
+  background-color: #539ec8;
+  margin: 2px;
+  display: inline-block;
+  padding: 15px 30px;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: color 350ms ease-in-out;
+  -moz-transition: color 350ms ease-in-out;
+  -ms-transition: color 350ms ease-in-out;
+  -o-transition: color 350ms ease-in-out;
+  transition: color 350ms ease-in-out; }
+  @media screen and (min-width: 800px) {
+    .nav-item-link {
+      min-width: 8%;
+      width: auto;
+      margin: 0 5px; } }
+  .nav-item-link:hover, .nav-item-link.active {
+    background-color: #fff;
+    color: #539ec8; }
