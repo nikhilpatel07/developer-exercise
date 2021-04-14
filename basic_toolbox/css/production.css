@@ -10,6 +10,10 @@
   src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.eot");
   src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.eot#iefix") format("embedded-opentype"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.woff2") format("woff2"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.woff") format("woff"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.ttf") format("opentype"); }
 
+.main {
+  background: #ccc;
+  margin: 0 auto; }
+
 @font-face {
   font-family: "Roboto Light";
   font-style: normal;
@@ -22,12 +26,58 @@
   src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.eot");
   src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.eot#iefix") format("embedded-opentype"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.woff2") format("woff2"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.woff") format("woff"), url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/carsearch/webfonts/Roboto-Regular.ttf") format("opentype"); }
 
-.main {
-  background: #ccc;
-  margin: 6px 0; }
+.header-wrapper {
+  overflow: hidden;
+  background-color: #333; }
+
+.nav-wrapper {
+  text-align: center; }
+
+.nav-item-list {
+  width: 100%;
+  padding: 0;
+  margin: 10px auto; }
   @media screen and (min-width: 768px) {
-    .main {
-      margin: 4px 0; } }
+    .nav-item-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      color: #333;
+      text-decoration: none; } }
+
+.nav-item-link {
+  font-family: "Roboto Regular", arial, verdana, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  list-style: none;
+  width: 48%;
+  text-align: center;
+  color: #fff;
+  background-color: #539ec8;
+  margin: 2px;
+  display: inline-block;
+  padding: 15px 30px;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: color 350ms ease-in;
+  -moz-transition: color 350ms ease-in;
+  -ms-transition: color 350ms ease-in;
+  -o-transition: color 350ms ease-in;
+  transition: color 350ms ease-in; }
+  @media screen and (min-width: 768px) {
+    .nav-item-link {
+      min-width: 8%;
+      width: auto;
+      margin: 0 5px; } }
+  .nav-item-link:hover, .nav-item-link.active {
+    background-color: #fff;
+    color: #539ec8; }
 
 .toolbox-wrapper-right {
   display: block; }
