@@ -59,6 +59,8 @@
 
 .pb-item {
   @include primaryFontStack;
+  font-size: 16px;
+  line-height: 24px;
   background: $buttonCol;
   color: #fff;
   display: inline-block;
