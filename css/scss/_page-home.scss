@@ -1,0 +1,84 @@
+.blog-logo-wrapper {
+  text-align: center;
+}
+
+.blog-logo {
+  width: 75px;
+}
+
+.welcome-heading-wrapper {
+  margin: auto 0;
+  padding: 50px 50px;
+}
+
+.wh-title {
+  @include primaryFontStack;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+
+.wh-description {
+  @include primaryFontStackLight;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #fff;
+}
+
+.whd-list {
+  list-style: none;
+}
+
+.whd-list-item {
+  @include primaryFontStackLight;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.primary-button-wrapper {
+  width: 100%;
+  text-align: center;
+
+  @include respond-screen($bp-md) {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+.pb-item {
+  @include primaryFontStack;
+  font-size: 16px;
+  line-height: 24px;
+  background: $buttonCol;
+  color: #fff;
+  display: inline-block;
+  width: 45%;
+  padding: 12px 18px;
+  margin: 10px auto;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+  @include Transition(transform, 350);
+
+  @include respond-screen($bp-md) {
+    min-width: 8%;
+    width: auto;
+    margin: 0 5px;
+  }
+
+  &:hover {
+    background: #fff;
+    color: $buttonCol;
+  }
+}
